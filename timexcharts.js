@@ -1,5 +1,7 @@
 class StepCountBarChart {
     constructor(ctx, data) {
+        this.ctx = ctx;
+
         this.chart = new Chart(this.ctx, {
             type: 'bar',
             data: data,
@@ -25,6 +27,8 @@ class StepCountBarChart {
 
 class SleepQualityBarChart {
     constructor(ctx, data) {
+        this.ctx = ctx;
+
         this.chart = new Chart(this.ctx, {
             type: 'bar',
             data: data,
