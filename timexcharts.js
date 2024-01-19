@@ -1,7 +1,7 @@
 // Import and re-export classes and constants
-const StepCountBarChart = require('./stepcountbarchart');
-const SleepQualityBarChart = require('./sleepqualitybarchart');
-const { TimeDisplayFormat } = require('./timedisplayformat');
+const StepCountBarChart = require('./stepcountbarchart.js');
+const SleepQualityBarChart = require('./sleepqualitybarchart.js');
+const { TimeDisplayFormat } = require('./timedisplayformat.js');
 
 module.exports = {
   StepCountBarChart,
