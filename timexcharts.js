@@ -2,6 +2,7 @@ class StepCountBarChart {
     constructor(ctx, data) {
         this.ctx = ctx;
 
+        console.log("Hello");
         this.chart = new Chart(this.ctx, {
             type: 'bar',
             data: data,
@@ -29,6 +30,7 @@ class SleepQualityBarChart {
     constructor(ctx, data) {
         this.ctx = ctx;
 
+        console.log("Hello");
         this.chart = new Chart(this.ctx, {
             type: 'bar',
             data: data,
