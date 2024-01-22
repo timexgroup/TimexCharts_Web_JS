@@ -51,12 +51,6 @@ class StepCountBarChart {
         let randomNumbers = [0];
         let labels = [''];
 
-        // Generate 96 random numbers and push them into the array
-        // for (let i = 0; i < 24; i++) {
-        //     randomNumbers.push(Math.random());
-        //     labels.push(String(i))
-        // }
-
         // data block
         this.defdata = {
             labels: labels,
@@ -115,14 +109,6 @@ class StepCountBarChart {
                 } 
             }
         };
-
-        // Check if Chart class is available (to avoid re-adding the script if already loaded)
-        // if (typeof Chart !== 'function') {
-        //     // Add Chart.js script dynamically if not already loaded
-        //     const chartJsScript = document.createElement('script');
-        //     chartJsScript.src = 'https://cdn.jsdelivr.net/npm/chart.js';
-        //     document.head.appendChild(chartJsScript);
-        // }
 
         this.addCustomXAxisLabels();
 
@@ -216,8 +202,6 @@ class StepCountBarChart {
     }
 
     setChartData(stepList) {
-        console.log("StepCountBarChart setChartData");
-
         const stepsArrayFromList = new Array(this.maxIntervalCount).fill(0);
         let index = 0;
         let displaySize = this.displayIntervalCount;
@@ -249,9 +233,6 @@ class StepCountBarChart {
                     }
                 }
 
-        //         setChartData(displayArray, displaySize);
-                // console.log(displayArray);
-                // console.log(this.defdata);
                 this.intervalUsed = this.displayIntervalCount;
 
                 this.defdata.labels = new Array(displaySize).fill('');
@@ -262,9 +243,7 @@ class StepCountBarChart {
     }
 
     resetChart() {
-        // console.log("StepCountBarChart resetChart");
         this.defdata.datasets[0].data = [];
-        // console.log(this.defdata);
         this.chart.update();
     }
 
@@ -278,7 +257,6 @@ class StepCountBarChart {
 
     setDisplayIntervalCount(displayIntervalCount) {
         this.displayIntervalCount = displayIntervalCount;
-        // console.log(displayIntervalCount);
     }
 
     getXAxisLabelsWithFormatting(label1, label2) {
