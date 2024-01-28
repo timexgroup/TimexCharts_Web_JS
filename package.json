@@ -1,6 +1,6 @@
 {
   "name": "timexcharts",
-  "version": "0.1.7-alpha1",
+  "version": "0.1.8-alpha2",
   "description": "A library for creating Timex-designed Charts using Chart.js",
   "main": "timexcharts.js",
   "scripts": {
